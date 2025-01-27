@@ -28,12 +28,12 @@ export default defineUserConfig({
 
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
-    // hostname: 'https://shinonomoew.top/',
+    hostname: 'https://shinonomoew.top/',
 
     /* 文档仓库配置，用于 editLink */
-    // docsRepo: '',
-    // docsDir: 'docs',
-    // docsBranch: '',
+    docsRepo: 'shininome/shinonomeow.top',
+    docsDir: 'docs',
+    docsBranch: 'main',
 
     /* 页内信息 */
     editLink: true,
@@ -119,28 +119,28 @@ export default defineUserConfig({
        *  markdown power
        * @see https://theme-plume.vuejs.press/config/plugin/markdown-power/
        */
-      // markdownPower: {
-      //   pdf: true,          // 启用 PDF 嵌入 @[pdf](/xxx.pdf)
-      //   caniuse: true,      // 启用 caniuse 语法  @[caniuse](feature_name)
-      //   plot: true,         // 启用隐秘文本语法 !!xxxx!!
-      //   bilibili: true,     // 启用嵌入 bilibili视频 语法 @[bilibili](bid)
-      //   youtube: true,      // 启用嵌入 youtube视频 语法 @[youtube](video_id)
-      //   artPlayer: true,    // 启用嵌入 artPlayer 本地视频 语法 @[artPlayer](url)
-      //   audioReader: true,  // 启用嵌入音频朗读功能 语法 @[audioReader](url)
-      //   icons: true,        // 启用内置图标语法  :[icon-name]:
-      //   codepen: true,      // 启用嵌入 codepen 语法 @[codepen](user/slash)
-      //   replit: true,       // 启用嵌入 replit 语法 @[replit](user/repl-name)
-      //   codeSandbox: true,  // 启用嵌入 codeSandbox 语法 @[codeSandbox](id)
-      //   jsfiddle: true,     // 启用嵌入 jsfiddle 语法 @[jsfiddle](user/id)
-      //   npmTo: true,        // 启用 npm-to 容器  ::: npm-to
-      //   demo: true,         // 启用 demo 容器  ::: demo
-      //   repl: {             // 启用 代码演示容器
-      //     go: true,         // ::: go-repl
-      //     rust: true,       // ::: rust-repl
-      //     kotlin: true,     // ::: kotlin-repl
-      //   },
-      //   imageSize: 'local', // 启用 自动填充 图片宽高属性，避免页面抖动
-      // },
+      markdownPower: {
+        //   pdf: true,          // 启用 PDF 嵌入 @[pdf](/xxx.pdf)
+        //   caniuse: true,      // 启用 caniuse 语法  @[caniuse](feature_name)
+        //   plot: true,         // 启用隐秘文本语法 !!xxxx!!
+        bilibili: true,     // 启用嵌入 bilibili视频 语法 @[bilibili](bid)
+        youtube: true,      // 启用嵌入 youtube视频 语法 @[youtube](video_id)
+        //   artPlayer: true,    // 启用嵌入 artPlayer 本地视频 语法 @[artPlayer](url)
+        //   audioReader: true,  // 启用嵌入音频朗读功能 语法 @[audioReader](url)
+        //   icons: true,        // 启用内置图标语法  :[icon-name]:
+        //   codepen: true,      // 启用嵌入 codepen 语法 @[codepen](user/slash)
+        //   replit: true,       // 启用嵌入 replit 语法 @[replit](user/repl-name)
+        //   codeSandbox: true,  // 启用嵌入 codeSandbox 语法 @[codeSandbox](id)
+        //   jsfiddle: true,     // 启用嵌入 jsfiddle 语法 @[jsfiddle](user/id)
+        //   npmTo: true,        // 启用 npm-to 容器  ::: npm-to
+        //   demo: true,         // 启用 demo 容器  ::: demo
+        //   repl: {             // 启用 代码演示容器
+        //     go: true,         // ::: go-repl
+        //     rust: true,       // ::: rust-repl
+        //     kotlin: true,     // ::: kotlin-repl
+        //   },
+        imageSize: 'local', // 启用 自动填充 图片宽高属性，避免页面抖动
+      },
 
       /**
        * 在 Markdown 文件中导入其他 markdown 文件内容。
@@ -160,23 +160,23 @@ export default defineUserConfig({
        * 水印
        * @see https://theme-plume.vuejs.press/guide/features/watermark/
        */
-      // watermark: true,
+      watermark: true,
 
       /**
        * 评论 comments
        * @see https://theme-plume.vuejs.press/guide/features/comments/
        */
-      // comment: {
-      //   provider: 'Giscus', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
-      //   comment: true,
-      //   repo: '',
-      //   repoId: '',
-      //   category: '',
-      //   categoryId: '',
-      //   mapping: 'pathname',
-      //   reactionsEnabled: true,
-      //   inputPosition: 'top',
-      // },
+      comment: {
+        provider: 'Giscus', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
+        comment: true,
+        repo: "shininome/shinonomeow.top", // 仓库
+        repoId: 'R_kgDONwLu4g',
+        category: 'Announcements',
+        categoryId: 'DIC_kwDONwLu4s4CmYNj',
+        mapping: 'pathname',
+        reactionsEnabled: true,
+        inputPosition: 'top',
+      },
     },
 
     /**
