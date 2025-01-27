@@ -5,9 +5,8 @@ config:
   -
     type: banner
     full: true
-    banner: https://gcore.jsdelivr.net/gh/shininome/blog_imgs@blog/blog/background/koro_full.png
+    backgroundImage: https://gcore.jsdelivr.net/gh/shininome/blog_imgs@blog/blog/background/koro_full.png
     bannerMask:
-      light: 0.1
       dark: 0.3
     hero:
       name: 東雲研究所
