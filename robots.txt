@@ -1,0 +1,3 @@
+Sitemap: https://shinonomoew.top/sitemap.xml
+User-agent:*
+Disallow:
